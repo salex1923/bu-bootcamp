@@ -35,4 +35,10 @@ public class GradeAnalyzerTests {
         ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(88, 88, 88)); 
         assertEquals(88.0, GradeAnalyzer.calculateAverage(scores)); 
     }
+  
+  @Test
+  void ten_grades_average() {
+    ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(100, 95, 90, 85, 80, 75, 70, 65, 60, 55));
+    assertEquals(77.5, GradeAnalyzer.calculateAverage(scores));
+  } 
 }
